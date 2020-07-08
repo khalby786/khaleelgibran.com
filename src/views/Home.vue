@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img src="https://cdn.khaleelgibran.com/img/donut.png" alt="Khaleel Gibran's blue donut" id="donut">
+    <MainPage name="Khaleel Gibran" tagline="13 year-old web developer + donut lover" about="I create open-source projects with Node.js and some Vue."/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import MainPage from '@/components/MainPage.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    MainPage
   }
 }
 </script>
+
+<style scoped>
+
+  #main {
+    margin-top: 100px;
+    height: 160px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+</style>
