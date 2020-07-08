@@ -1,24 +1,9 @@
-# hello-express
+# Khaleel Gibran
 
-## Project setup
-```
-npm install
-```
+I have a long history of personal websites. And the next personal website I create is much better than the previous one. And I was not satisfied by my previous website and I decided to make a new one, with Vue. One of the main reasons why I am building a new one is because of what someone said.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> It looks good, but there's a lot of stuff happening, it's getting slow.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+*Kumar Abhirup, 2020 :)*
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+View the developing site here!
