@@ -22,7 +22,7 @@
   header {
     height: auto;
     background-color: white;
-    top: -30px;
+    top: -3vw;
     left: 0px;
     width: 100%;
     position: absolute;

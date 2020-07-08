@@ -11,16 +11,26 @@
     <p id="about">
       {{about}}
     </p>
+    
+    <p style="text-align:center;font-size:40px;">
+      <a :href="github" class="quickLinks"><i class="fab fa-github"></i></a>
+      <a :href="twitter" class="quickLinks"><i class="fab fa-twitter"></i></a>
+      <a href="/blog" class="quickLinks"><i class="fas fa-pencil-alt" style="font-size:30px;"></i></a>
+    </p>
+    
   </div>
 </template>
 
 <script>
+  
 export default {
   name: 'MainPage',
   props: {
     name: String,
     about: String,
     tagline: String,
+    twitter: String,
+    github: String,
   }
 }
 </script>
@@ -45,6 +55,17 @@ export default {
   #about {
     font-size: 1em;
     text-align: center;
+  }
+  
+  .quickLinks {
+    border: 3px dashed yellow;
+    border-radius: 9px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   
 </style>
