@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>
+    <h1 id="myname">
       {{name}}
     </h1>
 
@@ -8,7 +8,7 @@
       {{tagline}}
     </p>
 
-    <p id="about">
+    <p id="about-homepage">
       {{about}}
     </p>
     
@@ -23,16 +23,17 @@
 
 <script>
   
-export default {
-  name: 'MainPage',
-  props: {
-    name: String,
-    about: String,
-    tagline: String,
-    twitter: String,
-    github: String,
+  export default {
+    name: 'MainPage',
+    props: {
+      name: String,
+      about: String,
+      tagline: String,
+      twitter: String,
+      github: String,
+    }
   }
-}
+  
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -52,13 +53,13 @@ export default {
     margin-top: 0px;
   }
 
-  #about {
+  #about-homepage {
     font-size: 1em;
     text-align: center;
   }
   
   .quickLinks {
-    border: 3px dashed yellow;
+    border: 1px solid var(--secondary);
     border-radius: 9px;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -66,6 +67,7 @@ export default {
     padding-bottom: 20px;
     margin-right: 10px;
     margin-left: 10px;
+    color: white;
   }
   
 </style>
