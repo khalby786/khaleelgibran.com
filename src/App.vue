@@ -11,22 +11,28 @@
 
 <style>
   
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+  
   html {
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial,
       sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     position: relative;
     box-sizing: border-box;
     margin: 5vw;
+    --primary: #0F0F23;
+    --secondary: white;
+    background-color: var(--primary);
+    color: var(--secondary);
   }
 
   header {
     height: auto;
-    background-color: white;
+    background-color: var(--primary);
+    color: var(--secondary);
     top: -3vw;
     left: 0px;
     width: 100%;
     position: absolute;
-    box-shadow: 0 2px 0 0 #f5f5f5;
     /*   padding: 15px; */
     margin-bottom: 100px;
     box-sizing: border-box; /** add this **/
@@ -42,7 +48,21 @@
     cursor: pointer;
     transition: 150ms linear;
     margin-right: 20px;
-    border-bottom: 1px solid blue;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-family: "IBM Plex Mono", monospace;
+    transition: 150ms;
+  }
+  
+  .right:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: 150ms;
   }
 
   #left {
@@ -51,7 +71,7 @@
   }
 
   a {
-    color: black;
+    color: var(--secondary);
     border-bottom: 1px solid blue;
     text-decoration: none;
   }
