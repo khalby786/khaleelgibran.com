@@ -18,13 +18,20 @@
       <a href="/blog" class="quickLinks"><i class="fas fa-pencil-alt" style="font-size:30px;"></i></a>
     </p>
     
+    <GitHub />
+    
   </div>
 </template>
 
 <script>
+
+  import GitHub from "./GitHub.vue"
   
   export default {
     name: 'MainPage',
+    components: {
+      GitHub
+    },
     props: {
       name: String,
       about: String,
@@ -47,7 +54,7 @@
   }
 
   #tagline {
-    color: #4a4a4a;
+    color: var(--border);
     text-align: center;
     font-size: 1.5rem;
     margin-top: 0px;
