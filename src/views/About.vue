@@ -41,7 +41,7 @@
   #about {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 24px;
     padding-right: 20px;
     padding-left: 20px;

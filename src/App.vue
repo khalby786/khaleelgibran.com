@@ -2,25 +2,43 @@
   <div id="app">
     <header>
       <span id="left" style="font-size:30px;margin-left:15vw;cursor:pointer;">🍩</span>
-      <router-link to="/about" class="right" style="margin-right:15vw;">About</router-link>
-      <router-link to="/" class="right">Home</router-link>
+      <span class="right" style="margin-right:15vw;">
+        <router-link to="/" class="nav-button">Home</router-link>
+        <router-link to="/about" class="nav-button">About</router-link>
+        <router-link to="/projects" class="nav-button">Projects</router-link>
+      </span>
     </header>
     <router-view/>
+    <Footer />
   </div>
 </template>
+
+<script>
+  
+  import Footer from '@/components/Footer.vue'
+  
+  export default {
+    components: {
+      Footer
+    }
+  }
+  
+</script>
 
 <style>
   
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+  @import url('https://rsms.me/inter/inter.css');
   
   html {
-    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial,
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, "Inter", Helvetica, Arial,
       sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     position: relative;
     box-sizing: border-box;
     margin: 5vw;
-    --primary: #0F0F23;
+    --primary: #100e17;
     --secondary: white;
+    --border: #63E921;
     background-color: var(--primary);
     color: var(--secondary);
   }
@@ -41,9 +59,16 @@
     -ms-box-sizing: border-box; /** add this **/
     padding: 10px;
   }
-
+  
+  h2 {
+    color: var(--border);
+  }
+  
   .right {
     float: right;
+  }
+
+  .nav-button {
     display: inline-block;
     cursor: pointer;
     transition: 150ms linear;
@@ -59,7 +84,7 @@
     transition: 150ms;
   }
   
-  .right:hover {
+  .nav-button:hover {
     background-color: var(--secondary);
     color: var(--primary);
     transition: 150ms;
