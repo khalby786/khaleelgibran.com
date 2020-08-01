@@ -6,6 +6,7 @@
         <router-link to="/" class="nav-button">Home</router-link>
         <router-link to="/about" class="nav-button">About</router-link>
         <router-link to="/projects" class="nav-button">Projects</router-link>
+        <router-link to="/blog" class="nav-button">Blog</router-link>
       </span>
     </header>
     <router-view/>
