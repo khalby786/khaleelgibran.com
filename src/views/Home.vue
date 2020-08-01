@@ -26,6 +26,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 160px;
   }
   
 </style>

@@ -45,7 +45,7 @@
     padding-left: 40px;
     padding-bottom: 40px;
     padding-right: 40px;
-    height: 300px;
+    min-height: 300px;
     margin-top: 10px;
     min-width: 300px;
   }
