@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <Markdown :content="about" />
+    <PuSkeleton :duration="5"><Markdown :content="about" /></PuSkeleton>
   </div>
 </template>
 
@@ -21,6 +21,11 @@
     In my free time, I like to eat, watch movies, draw webcomics like [The Picatoon](https://thepicatoon.wordpress.com), play football and PES.
  
   `;
+  
+  import Vue from 'vue';
+  import PuSkeleton from 'vue-loading-skeleton';
+
+  Vue.use(PuSkeleton);
 
   export default {
     name: 'About',

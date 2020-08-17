@@ -3,7 +3,7 @@
     <header>
       <span id="left" style="font-size:30px;margin-left:15vw;cursor:pointer;">🍩</span>
       <span class="right" style="margin-right:15vw;">
-        <router-link to="/" class="nav-button">Home</router-link>
+        <router-link to="/" class="nav-button"><PuSkeleton :duration="5">Home</PuSkeleton></router-link>
         <router-link to="/about" class="nav-button">About</router-link>
         <router-link to="/projects" class="nav-button">Projects</router-link>
         <router-link to="/blog" class="nav-button">Blog</router-link>
@@ -16,7 +16,12 @@
 
 <script>
   
-  import Footer from '@/components/Footer.vue'
+  import Footer from '@/components/Footer.vue';
+  
+  import Vue from 'vue';
+  import PuSkeleton from 'vue-loading-skeleton';
+
+  Vue.use(PuSkeleton);
   
   export default {
     components: {
@@ -83,6 +88,7 @@
     padding-left: 7px;
     font-family: "IBM Plex Mono", monospace;
     transition: 150ms;
+    text-transform: uppercase;
   }
   
   .nav-button:hover {
