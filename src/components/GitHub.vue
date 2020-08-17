@@ -33,6 +33,10 @@
   import VueAnimate from 'vue-animate-scroll';
   
   Vue.use(VueAnimate);
+  
+  import PuSkeleton from 'vue-loading-skeleton';
+
+  Vue.use(PuSkeleton);
 
   export default {
     name: 'GitHub',
@@ -163,14 +167,14 @@
   }
   
   .animate {
-    transition-delay: .1s;
-    transition-duration: .25s;
+    transition-delay: .2s;
+    transition-duration: .30s;
     transition-timing-function: ease-in;
   }
 
   .slide-up {
     transform: translateX(-100px);
-    opacity: 0.2;
+    opacity: 0;
   }
 
   .slide-up.animate-active {
