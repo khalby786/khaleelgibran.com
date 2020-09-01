@@ -13,7 +13,7 @@
     <h3 v-animate="'slide-up'">
       Recent GitHub Repositories  
     </h3>
-    <div class="repo" v-for="repo in json" v-animate="'slide-up'">
+    <div class="repo" v-for="(repo, index) in json" v-animate="'slide-up'">
       <h3>
         <a :href="repo.url" style="color:black;">{{repo.name}}</a>
       </h3>
@@ -21,7 +21,7 @@
         {{repo.description}}  
       </p>
       <p>
-        <i class="far fa-star"></i>
+        <i class="far fa-star"></i><span style="vertical-align:middle;">&nbsp;{{repo.stargazers}}</span><i class="fas fa-code-branch" style="margin-left:20px;"></i><span style="vertical-align:middle;">&nbsp;{{repo.forks}}</span><span style="margin-left:20px;" class="language" :style="json[index].primaryLanguage ? 'background-color:' + json[index].primaryLanguage.color : 'background-color: grey'"></span><span style="vertical-align:middle;" class="languageName">&nbsp; {{json[index].primaryLanguage ? json[index].primaryLanguage.name : 'No primary language'}}</span>
       </p>
     </div>
   </div>
@@ -45,7 +45,8 @@
         json: [],
         commitUrl: "",
         commitText: "",
-        repoInfo: ""
+        repoInfo: "",
+        languageStyle: "",
       }
     },
     mounted: async function() {
@@ -117,7 +118,7 @@
 <style>
   
   #repos {
-    margin-top: 30px;
+    margin-top: 100px;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 50px;
@@ -167,8 +168,8 @@
   }
   
   .animate {
-    transition-delay: .2s;
-    transition-duration: .30s;
+    transition-delay: .5s;
+    transition-duration: .50s;
     transition-timing-function: ease-in;
   }
 
@@ -180,6 +181,19 @@
   .slide-up.animate-active {
     transform: translateX(0px);
     opacity: 1;
+  }
+  
+  .language {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .languageName {
+    vertical-align: middle;
   }
 
 </style>

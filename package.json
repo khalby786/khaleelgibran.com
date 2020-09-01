@@ -15,7 +15,9 @@
     "typewriter-effect": "^2.13.1",
     "vue-animate-scroll": "^0.1.5",
     "vue-markdown-loader": "^2.4.1",
-    "vue-loading-skeleton": "^1.1.9"
+    "vue-loading-skeleton": "^1.1.9",
+    "vue-particles": "^1.0.9",
+    "vue-sweetalert2": "^3.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -48,5 +50,6 @@
   ],
   "engines": {
     "node": "12.x"
-  }
+  },
+  "license": "MIT"
 }

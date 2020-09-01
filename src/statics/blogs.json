@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "my-first-post",
-      "date": "July 31, 2002",
+      "date": "July 31, 2020",
       "title": "A New Blog On a New Website",
       "description": "My all new blog made using Vue and powered by Markdown!"
     }

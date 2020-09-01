@@ -20,17 +20,21 @@
     
     <GitHub />
     
+    <Testimonials />
+    
   </div>
 </template>
 
 <script>
 
-  import GitHub from "./GitHub.vue"
+  import GitHub from "./GitHub.vue";
+  import Testimonials from "./Testimonials.vue";
   
   export default {
     name: 'MainPage',
     components: {
-      GitHub
+      GitHub,
+      Testimonials
     },
     props: {
       name: String,
@@ -75,6 +79,7 @@
     margin-right: 10px;
     margin-left: 10px;
     color: white;
+    cursor: pointer;
   }
   
 </style>
