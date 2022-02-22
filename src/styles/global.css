@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --serif: "Playfair Display", "Merriweather", serif;
+  --sans-serif: "Inter", "Public Sans", "Helvetica Neue", "Helvetica",
+    sans-serif;
+  --mono: "Fira Code", "Fira Mono", "Hack", "IBM Plex Mono", "Menlo", "Consolas",
+    monospace;
+  --background: #ffffff;
+  --gray: #575757;
+  --foreground: #000;
+  --selection: #f81ce5;
+  font-family: var(--sans-serif);
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  /* background-image: url("chrome://global/skin/media/imagedoc-darknoise.png"); */
+  color: var(--foreground);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.03em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+::selection {
+  background-color: var(--selection);
+  color: var(--foreground);
+}
+
+#app {
+  margin: 0px auto;
+  max-width: 750px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  /* color: var(--gray); */
+  font-family: var(--mono);
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 1em;
+}
+
+/* h3:before {
+  content: "// ";
+} */
+
+a {
+  /* transition: 200ms; */
+  opacity: 1;
+  color: inherit;
+  text-decoration-color: #5539cc;
+}
+
+a:hover {
+  /* color: rgba(255, 255, 255, 0.6); */
+  /* transition: 200ms; */
+  background-color: #5539cc;
+  color: var(--background);
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  /* padding-left: 1em; */
+  /* text-indent: -1em; */
+  margin-bottom: 10px;
+}
+
+li:before {
+  content: "~";
+  padding-right: 10px;
+  color: var(--gray);
+  font-family: var(--mono);
+}
+
+ion-icon {
+  font-size: 1.5em;
+}
+
+hr {
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+img {
+  max-width: 100%;
+}
+
+#top {
+  background: rgb(138, 0, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(138, 0, 255, 1) 0%,
+    rgba(103, 0, 255, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  width: 100%;
+}
+
+code {
+  color: var(--gray);
+  font-family: var(--mono);
+}
+
+code:before {
+  content: "`";
+}
+
+code:after {
+  content: "`";
+}

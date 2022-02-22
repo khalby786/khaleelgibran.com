@@ -1,0 +1,16 @@
+---
+const { title = '$ khaleel gibran', description = 'professhunal 1337 h@x0r' } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')} />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet" />
+<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+
+<script async src="https://cdn.splitbee.io/sb.js"></script>

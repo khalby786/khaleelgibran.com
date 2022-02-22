@@ -1,0 +1,21 @@
+{
+  "name": "@khalby786/personal-website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --reload",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-svelte": "^0.3.1",
+    "@astrojs/renderer-vue": "^0.3.0",
+    "astro": "^0.22.13"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Khaleel Gibran",
+    "email": "khalby786@gmail.com"
+  }
+}

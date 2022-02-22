@@ -1,0 +1,23 @@
+---
+import MainHead from '../components/MainHead.astro';
+
+import Hello from '../components/Hello.svelte';
+import Socials from '../components/Socials.svelte';
+import Projects from '../components/Projects.vue';
+import Footer from '../components/Footer.vue';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="$ khaleel gibran" description="khaleel gibran's personal website" />
+	</head>
+	<body>
+		<div id="app">
+			<div id="top"></div>
+			<Hello />
+			<Socials />
+			<Projects />
+			<Footer />
+		</div>	
+	</body>
+</html>
