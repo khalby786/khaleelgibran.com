@@ -26,7 +26,7 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   letter-spacing: -0.03em;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -37,18 +37,16 @@ body {
 
 #app {
   margin: 0px auto;
-  max-width: 750px;
+  max-width: 600px;
   padding: 20px;
 }
 
 h3 {
-  font-size: 1em;
-  font-weight: normal;
-  /* color: var(--gray); */
+  text-transform: uppercase;
+  color: var(--gray);
   font-family: var(--mono);
-  background-color: var(--foreground);
-  color: var(--background);
-  padding: 1em;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* h3:before {
@@ -62,10 +60,18 @@ a {
   text-decoration-color: #5539cc;
 }
 
-a:hover {
-  /* color: rgba(255, 255, 255, 0.6); */
-  /* transition: 200ms; */
+/* a:hover {
   background-color: #5539cc;
+  color: var(--background);
+} */
+
+a[target="_blank"]::after {
+  content: "↗";
+  color: #5539cc;
+}
+
+a[target="_blank"]::after:hover {
+  content: "↗";
   color: var(--background);
 }
 
@@ -73,6 +79,7 @@ ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+  margin-top: 0px;
 }
 
 li {

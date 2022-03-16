@@ -1,69 +1,97 @@
-<script>
-  function calculate_age(dob) {
-    let diff_ms = Date.now() - dob.getTime();
-    let age_dt = new Date(diff_ms);
-
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
-  }
-
-  let age = calculate_age(new Date(2006, 8, 6));
-</script>
-
-<p style="font-family: var(--mono);">Hi, I'm</p>
+<!-- <p style="font-family: var(--mono);">Hi, I'm</p> -->
 <h1>Khaleel Gibran</h1>
 
-<div id="description">
+<section id="description">
   <p>
-    I'm {age}, I love <b>donuts</b> and <b>robots</b>, and I make weird and often <i>useless</i>
-    web-related stuff on the internet. I like messing with technology, making <a href="https://github.com/khalby786" target="_blank" rel="noopener noreferrer">websites</a> and playing around with <a href="https://github.com/khalby786" target="_blank" rel="noopener noreferrer">code</a>.
+    I love <b>donuts</b> and <b>robots</b>, and I make weird and often
+    <i>useless</i>
+    web-related stuff on the internet. I like messing with technology, making
+    <a
+      href="https://github.com/khalby786"
+      target="_blank"
+      rel="noopener noreferrer">websites</a
+    >
+    and playing around with
+    <a
+      href="https://github.com/khalby786"
+      target="_blank"
+      rel="noopener noreferrer">code</a
+    >.
   </p>
+
   <br />
   <nav>
-    Fast travel to
-    <ul>
-      <li><a href="#fax">facts</a></li>
-      <li><a href="#socials">Contact and socials</a></li>
-      <li><a href="#projects">Stuff I've made</a></li>
-    </ul>
+    You can skip ahead to <a href="#projects">browsing the stuff I've made</a>,
+    <a href="#socials">get in touch with me</a>,
+    <a href="https://blog.khaleelgibran.com" target="_blank">read my blog</a>
+    or
+    <a href="https://scrapbook.hackclub.com/khalby786" target="_blank"
+      >visit my scrapbook!</a
+    >
   </nav>
+
   <br />
-  <h3 id="fax">
-    fun facts about me
-  </h3>
+  <br />
+
+  <hr />
+
+  <br />
+  <br />
 
   <ul class="fax">
     <li>
-      Although I'm more of a front-end guy with Vue, I love using Node; been getting gud at TypeScript and learning Rust. I'm all for trying out new stuff and learning new things. For example, this website is made with a combination of Svelte and Vue - made possible by <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro</a>.
+      Although I'm more of a front-end guy with Vue, I love using Node; been
+      getting gud at TypeScript and learning Rust. I'm all for trying out new
+      stuff and learning new things. For example, this website is made with a
+      combination of Svelte and Vue - made possible by <a
+        href="https://astro.build/"
+        target="_blank"
+        rel="noopener noreferrer">Astro</a
+      >.
     </li>
     <li>
       I like donuts. Like a lot lot, as some of you who've known me can probably
       tell. I extremely love donuts.
     </li>
     <li>
-      I <i>try</i> to create <a href="https://art.khaleelgiban.com" target="_blank" rel="noopener noreferrer">3D art</a>
+      I <i>try</i> to create
+      <a
+        href="https://art.khaleelgiban.com"
+        target="_blank"
+        rel="noopener noreferrer">3D art</a
+      >
       when I'm not doing other <i>stuff</i>.
     </li>
     <li>
-      I've <strike>recently</strike> started writing stuff online on a blog - you can check it
-      out <a href="https://blog.khaleelgibran.com" target="_blank" rel="noopener noreferrer">here</a>.
+      I've <strike>recently</strike> started writing stuff online on a blog -
+      you can check it out
+      <a
+        href="https://blog.khaleelgibran.com"
+        target="_blank"
+        rel="noopener noreferrer">here</a
+      >.
     </li>
     <li>
       My preferred way of "chilling" is Spotify. The phrase needs to be "Spotify
       and chill"! &lt;3
     </li>
     <li>
-      i use <a href="https://archcraft.io/" target="_blank" rel="noopener noreferrer">Archcraft</a>, btw.
+      i use <a
+        href="https://archcraft.io/"
+        target="_blank"
+        rel="noopener noreferrer">Archcraft</a
+      >, btw.
       <br /><br />
       <img src="/assets/archcraft.png" alt="archcraft" />
     </li>
   </ul>
-</div>
+</section>
 
 <style>
   p {
     color: gray;
     margin-bottom: 0px;
-    font-family: var(--sans-erif);
+    font-family: var(--sans-serif);
   }
 
   b {
@@ -89,7 +117,7 @@
     margin-bottom: 0px;
     opacity: 1;
     transition: 200ms;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 0px;
     font-family: "Hack", "Fira Code", "Fira Mono", "IBM Plex Mono", "Menlo",
       "Consolas", monospace;
@@ -111,7 +139,7 @@
 
   #description > p {
     color: var(--foreground);
-    font-size: 24px;
+    line-height: 1.5;
   }
 
   #description {
@@ -137,13 +165,17 @@
       "Consolas", monospace;
   }
 
-  nav {
-    font-family: var(--mono);
+  hr {
+    border: none;
+    margin: none;
+    box-shadow: none;
+    border-top: 1px solid var(--foreground);
   }
 
-  nav li:before {
-    content: "-";
-    padding-right: 10px;
+  nav a {
     color: var(--gray);
+    font-family: "Hack", "Fira Code", "Fira Mono", "IBM Plex Mono", "Menlo",
+      "Consolas", monospace;
+    text-transform: uppercase;
   }
 </style>

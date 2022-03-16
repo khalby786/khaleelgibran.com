@@ -1,6 +1,6 @@
 <template>
-  <div id="projects">
-    <h3>useful and useless *stuff* I've made</h3>
+  <section id="projects">
+    <h3>SOME NOTABLE STUFF I'VE MADE</h3>
 
     <ul class="projects">
       <li v-for="project in projects" v-bind:key="project.name" class="project">
@@ -20,7 +20,7 @@
         </div>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -137,10 +137,12 @@ a:hover {
 
 a::before {
   content: "[";
+  color: var(--gray);
 }
 
 a::after {
   content: "]";
+  color: var(--gray);
 }
 
 .projects p {

@@ -1,8 +1,5 @@
-<div id="socials">
-  <h3>
-    places on the internet where you can usually find me and stuff that I create
-  </h3>
-
+<section id="socials">
+  <h3>where you can find me</h3>
   <p>
     I usually go by the <a
       href="https://www.merriam-webster.com/dictionary/moniker"
@@ -78,7 +75,7 @@
     alt="I'm totally fine with such emails."
     style="width: 100%;"
   />
-</div>
+</section>
 
 <style>
   #socials {

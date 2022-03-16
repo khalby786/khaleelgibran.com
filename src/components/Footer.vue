@@ -5,6 +5,11 @@
       <img src="/assets/rr_badge.png" />
     </a><br />
     <a href="https://rajeshtherobot.khaleelgibran.com/" target="_blank">hmmm</a>
+
+    <br /><br />
+
+    <a href="https://splitbee.io" target="_blank">Splitbee analytics</a>, soon <a href="https://512kb.club">512kb.club</a>!
+
     <iframe src='https://overengineering.kognise.dev/embed/khalby786' width='100%' height='100' style='user-select: none;' frameBorder='0'></iframe>
   </footer>
 </template>
