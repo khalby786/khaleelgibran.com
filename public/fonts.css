@@ -1,0 +1,70 @@
+/* fonts, baby! */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Book.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Italic.otf) format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Medium.otf) format("opentype");
+  font-weight: 530;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-SemiBolditalic.otf) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/NeueMontreal-Thin.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-Light.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-BoldItalic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-LightItalic.otf) format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}

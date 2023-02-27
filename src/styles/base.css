@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts, baby! */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Book.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Italic.otf) format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-Medium.otf) format("opentype");
+  font-weight: 530;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/PPNeueMontreal-SemiBolditalic.otf) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(/fonts/NeueMontreal-Thin.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-Light.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-BoldItalic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fraktion Sans";
+  src: url(/fonts/PPFraktionSans-LightItalic.otf) format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* alright now */
+
+body {
+  font-family: "Neue Montreal", "Inter", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #212121;
+  background-image: url("/imagedoc-darknoise.png");
+  color: white;
+  @apply antialiased;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+code,
+pre {
+  font-family: "Fraktion Sans", "Fira Code", "IBM Plex Mono", monospace !important;
+  padding: 0;
+}
+
+code::before {
+  content: "`";
+  color: #ff00c7;
+}
+
+code::after {
+  content: "`";
+  color: #ff00c7;
+}
+
+a {
+  text-decoration: underline !important;
+  text-decoration-color: #ff00c7 !important;
+  text-decoration-thickness: 1px !important;
+  transition: 100ms;
+}
+
+a:hover {
+  background-color: #ff00c7 !important;
+  color: #212121 !important;
+  transition: 100ms;
+}

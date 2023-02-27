@@ -1,0 +1,4 @@
+{
+  "dev": "npm run start",
+  "framework": "astro"
+}

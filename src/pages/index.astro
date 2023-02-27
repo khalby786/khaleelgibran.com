@@ -1,0 +1,34 @@
+---
+// Component Imports
+import Header from '../components/Header.vue';
+import Hero from '../components/Hero.vue';
+import Events from '../components/Events.vue';
+import Spotify from '../components/Spotify.vue';
+import Webring from '../components/Webring.vue'
+import Footer from '../components/Footer.svelte';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./src/styles/base.css" />
+</head>
+
+<body>
+	<main class="px-5 py-10">
+		<Header />
+		<Hero />
+		<Events />
+		<Spotify client:visible />
+		<Webring />
+		<Footer />
+	</main>
+</body>
+
+</html>
