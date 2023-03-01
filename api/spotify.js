@@ -1,8 +1,9 @@
 // https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/
 
-
-const axios = require("axios")
-const querystring = require("querystring");
+console.log("spotify!")
+var axios = require("axios")
+var querystring = require("querystring");
+var isOdd = require("is-odd")
 
 const clientID = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
