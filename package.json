@@ -8,18 +8,17 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "devDependencies": {
-    "astro": "^1.0.0-beta.61",
-    "@astrojs/vue": "^0.2.0",
-    "@astrojs/svelte": "^1.0.2"
-  },
   "dependencies": {
+    "@astrojs/svelte": "^1.0.2",
     "@astrojs/tailwind": "^0.2.2",
+    "@astrojs/vue": "^0.2.0",
     "@tailwindcss/typography": "^0.5.4",
-    "postcss": "^8.4.14",
+    "astro": "^1.0.0-beta.61",
     "autoprefixer": "^10.4.7",
     "axios": "^1.2.2",
     "moment": "^2.29.4",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.2.7",
     "vue": "^3.2.37",
     "yaml": "^2.2.1"
   }
