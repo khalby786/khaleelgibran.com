@@ -1,9 +1,9 @@
 // https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/
 
-console.log("spotify!")
-var axios = require("axios")
+console.log("spotify!");
+var axios = require("axios");
 var querystring = require("querystring");
-var isOdd = require("is-odd")
+var fetch = require("node-fetch");
 
 const clientID = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
@@ -11,23 +11,36 @@ const refreshToken = process.env.REFRESH_TOKEN;
 const basicAuth = Buffer.from(`${clientID}:${clientSecret}`).toString("base64");
 
 export default async function handler(_req, _res) {
-  const response = await axios.post(
-    "https://accounts.spotify.com/api/token",
-    querystring.stringify({
+  // const response = await fetch(
+  //   "https://accounts.spotify.com/api/token",
+  //   querystring.stringify({
+  //     grant_type: "refresh_token",
+  //     refresh_token: refreshToken,
+  //   }),
+  //   {
+  //     headers: {
+  //       Authorization: `Basic ${basicAuth}`,
+  //       "Content-Type": "application/x-www-form-urlencoded",
+  //     },
+  //   }
+  // );
+
+  let response = await fetch("https://accounts.spotify.com/api/token", {
+    method: "POST",
+    headers: {
+      Authorization: `Basic ${basicAuth}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: querystring.stringify({
       grant_type: "refresh_token",
       refresh_token: refreshToken,
     }),
-    {
-      headers: {
-        Authorization: `Basic ${basicAuth}`,
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    }
-  );
+  });
+  response = await response.json();
 
-  const accessToken = response.data.access_token;
+  const accessToken = response.access_token;
 
-  const nowPlaying = await axios.get(
+  let nowPlaying = await fetch(
     "https://api.spotify.com/v1/me/player/currently-playing",
     {
       headers: {
@@ -35,10 +48,12 @@ export default async function handler(_req, _res) {
       },
     }
   );
+  nowPlaying = await nowPlaying.json();
+  console.log(nowPlaying)
 
-  if (nowPlaying .status === 204 || nowPlaying.status >= 400) {
-    return _res.status(200).json({ isPlaying: false })
-  }
+  if (!nowPlaying.is_playing || nowPlaying.is_playing === false) {
+    return _res.status(200).json({ isPlaying: false });
+  } 
 
-  return _res.status(200).json(nowPlaying.data);
+  return _res.status(200).json(nowPlaying);
 }
