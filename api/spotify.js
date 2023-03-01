@@ -1,7 +1,6 @@
 // https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/
 
 console.log("spotify!");
-var axios = require("axios");
 var querystring = require("querystring");
 var fetch = require("node-fetch");
 
