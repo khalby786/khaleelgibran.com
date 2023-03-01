@@ -1,7 +1,8 @@
 // https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/
 
-import axios from "axios";
-import querystring from "querystring";
+
+const axios = require("axios")
+const querystring = require("querystring");
 
 const clientID = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
