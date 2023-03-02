@@ -1,37 +1,36 @@
 ---
 // Component Imports
-import Header from '../components/Header.vue';
-import Hero from '../components/Hero.vue';
-import Events from '../components/Events.vue';
-import Spotify from '../components/Spotify.vue';
-import Webring from '../components/Webring.vue'
-import Footer from '../components/Footer.svelte';
+import Header from "../components/Header.vue";
+import Hero from "../components/Hero.vue";
+import Events from "../components/Events.vue";
+import Spotify from "../components/Spotify.vue";
+import Webring from "../components/Webring.vue";
+import Footer from "../components/Footer.svelte";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 
-import '../styles/base.css';
+import "../styles/base.css";
 ---
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>khaleel gibran</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./src/styles/base.css" /> -->
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/png" href="/favicon.png" />
-	<title>khaleel gibran</title>
-	<!-- <link rel="stylesheet" type="text/css" href="./src/styles/base.css" /> -->
-</head>
-
-<body>
-	<main class="px-5 py-10">
-		<Header />
-		<Hero />
-		<Events />
-		<Spotify client:visible />
-		<Webring />
-		<Footer />
-	</main>
-</body>
-
+  <body>
+    <main class="px-5 py-10">
+      <Header />
+      <Hero />
+      <Events />
+      <Spotify client:visible />
+      <Webring />
+      <Footer />
+    </main>
+    <script data-respect-dnt async src="https://cdn.splitbee.io/sb.js"></script>
+  </body>
 </html>
