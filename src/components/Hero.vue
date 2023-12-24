@@ -19,9 +19,9 @@
   </p>
   <p class="text-xl mt-3">
     You can find me on
-    <a href="https://discord.com/users/634701839983706112" target="_blank">Discord</a>,
-    <a href="https://social.dino.icu/@thepixelatedonut/" target="_blank">Mastodon</a> or
-    <a href="https://instagram.com/khalby786" target="_blank">Instagram</a>, or
+    <a href="https://discord.com/users/634701839983706112" rel="me" target="_blank">Discord</a>,
+    <a href="https://social.dino.icu/@thepixelatedonut" rel="me" target="_blank">Mastodon</a> or
+    <a href="https://instagram.com/khalby786" rel="me" target="_blank">Instagram</a>, or
     just send me a good ol'
     <a href="mailto:heyo@khaleelgibran.com" target="_blank">email</a>!
   </p>
