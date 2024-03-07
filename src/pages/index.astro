@@ -2,6 +2,7 @@
 // Component Imports
 import Header from "../components/Header.vue";
 import Hero from "../components/Hero.vue";
+import Cursors from "../components/Cursors.vue";
 import Events from "../components/Events.vue";
 import Spotify from "../components/Spotify.vue";
 import Webring from "../components/Webring.vue";
@@ -26,6 +27,7 @@ import "../styles/base.css";
     <main class="px-5 py-10">
       <Header />
       <Hero />
+      <Cursors client:only="vue" />
       <Events client:load />
       <Spotify client:visible />
       <Webring />

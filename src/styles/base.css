@@ -80,6 +80,7 @@ body {
   background-color: #212121;
   background-image: url("/imagedoc-darknoise.png");
   color: white;
+  height: 100%;
   @apply antialiased;
 }
 
