@@ -3,7 +3,9 @@
   <img src="/rr_badge.png" alt="RiversideRocks Badge" />
 </a>
 
-<footer class="mt-10 border border-b-0 border-l-0 border-r-0 border-slate-600">
+<p class="text-slate-400 mt-10 text-sm">Edit <a href="https://github.com/khalby786/khaleelgibran.com" target="_blank">this page</a> and <a href="https://github.com/khalby786/" target="_blank">others on GitHub</a>.</p>
+
+<footer class="mt-5 border border-b-0 border-l-0 border-r-0 border-slate-600">
   <p class="text-sm text-slate-300 pt-2">
     Please do not write beyond this line.
   </p>

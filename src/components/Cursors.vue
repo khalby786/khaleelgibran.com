@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     handlePointMove(event) {
-      console.log("mouse moved to", event.clientX, event.clientY);
       // throttle(() => {
         // }, 200);
       awareness.setLocalStateField("point", [event.clientX, event.clientY]);

@@ -31,8 +31,6 @@ export default {
     let data = await fetch("/api/spotify");
     data = await data.json();
 
-    console.log(data)
-
     if (!data.is_playing) {
       return;
     }
@@ -67,6 +65,7 @@ export default {
   methods: {
     play: function() {
       this.$refs.audio.load()
+      this.$refs.audio.volume = 0.1
       this.$refs.audio.play()
     },
     pause: function() {
