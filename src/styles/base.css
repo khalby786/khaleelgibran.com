@@ -74,6 +74,10 @@
 }
 /* alright now */
 
+::selection {
+  background: #7303fc;
+}
+
 body {
   font-family: "Neue Montreal", "Inter", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -109,11 +113,26 @@ a {
   text-decoration: underline !important;
   text-decoration-color: #ff00c7 !important;
   text-decoration-thickness: 1px !important;
-  transition: 100ms;
+  transition: 200ms;
 }
 
 a:hover {
   background-color: #ff00c7 !important;
-  color: #212121 !important;
-  transition: 100ms;
+  color: #212121;
+  transition: 200ms;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3em;
+  @apply border border-gray-500 border-l-0 border-r-0 border-t-0 pb-1;
+}
+
+h1, h2 {
+  @apply text-slate-300;
+}
+
+h3, h4 {
+  @apply text-slate-200;
 }

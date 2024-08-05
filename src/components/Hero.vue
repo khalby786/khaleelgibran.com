@@ -1,6 +1,32 @@
 <template>
-  <p class="mt-10 text-xl">Hello there! <s>General Kenobi!</s></p>
-  <p class="text-xl mt-3">
+  <p class="mt-10 sm:text-xl">Hi, I'm Khaleel. I make cool stuff on the web!</p>
+  <p class="mt-5 sm:text-xl">
+    If you'd like to say hi or hire me, feel free to reach out!
+  </p>
+  <ul class="mt-2 list-disc list-inside sm:text-xl">
+    <li>hi at khaleelgibran dot com
+      <a
+        href="https://keys.openpgp.org/vks/v1/by-fingerprint/CA79239AC8C13557574B0947A4F95479F42AAAF5"
+        target="blank"
+        ><span class="text-slate-400 !no-underline ml-1">(PGP)</span></a
+      >
+    </li>
+    <li>
+      <a
+        href="https://social.dino.icu/@thepixelatedonut"
+        rel="me"
+        target="_blank"
+        >Mastodon</a
+      >
+    </li>
+    <li><s>Twitter</s> account got suspended idk why</li>
+    <li>
+      <a class="" href="https://keybase.io/khalby786" target="_blank">Keybase</a
+      >, if you'd like to send me classified secrets
+    </li>
+  </ul>
+
+  <!-- <p class="text-xl mt-3">
     I go by <code>khalby786</code> on-line, living on the Internet writing
     <a href="https://github.com/khalby786" target="_blank">buggy code</a> <span class="text-slate-400">(github)</span> when
     I'm not at school studying for endless exams. I attempt to maintain a
@@ -38,9 +64,13 @@
       target="_blank"
       >[Keybase]</a
     >
-  </p>
+  </p> -->
 </template>
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+li {
+  list-style-type: '> ';
+}
+</style>

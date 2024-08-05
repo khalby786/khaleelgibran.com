@@ -3,9 +3,12 @@
 import Header from "../components/Header.vue";
 import Hero from "../components/Hero.vue";
 import Cursors from "../components/Cursors.vue";
-import Events from "../components/Events.vue";
+import Posts from "../components/Posts.vue";
+import Projects from "../components/Projects.vue";
+import Event from "../components/Event.vue";
 import Spotify from "../components/Spotify.vue";
 import Webring from "../components/Webring.vue";
+// import Chat from "../components/Chat.vue";
 import Footer from "../components/Footer.svelte";
 
 // Full Astro Component Syntax:
@@ -16,23 +19,25 @@ import "../styles/base.css";
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" /> 
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <title>khaleel gibran</title>
     <link rel="me" href="https://glitch.com/@khalby786" />
     <meta property="og:title" content="khaleel gibran" />
     <meta property="og:description" content="khaleel's web-site" />
-    <meta property="og:image" content="https://khaleelgibran.com/favicon.ico" />
+    <meta property="og:image" content="https://khaleelgibran.com/favicon.png" />
     <!-- <link rel="stylesheet" type="text/css" href="./src/styles/base.css" /> -->
   </head>
 
   <body>
     <main class="px-5 py-10">
+      <Cursors client:only="vue" />
       <Header />
       <Hero />
-      <Cursors client:only="vue" />
-      <Events client:load />
+      <Projects />
+      <Posts client:load />
+      <Event />
       <Spotify client:visible />
       <Webring />
       <Footer />
