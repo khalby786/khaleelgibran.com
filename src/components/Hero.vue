@@ -19,7 +19,18 @@
         >Mastodon</a
       >
     </li>
-    <li><s>Twitter</s> account got suspended idk why</li>
+    <li><a
+        href="https://bsky.app/profile/khaleelgibran.com"
+        rel="me"
+        target="_blank"
+        >Bluesky</a
+      ></li>
+    <li><a
+        href="https://x.com/apokhalyptic"
+        rel="me"
+        target="_blank"
+        >Twitter</a
+      ></li>
     <li>
       <a class="" href="https://keybase.io/khalby786" target="_blank">Keybase</a
       >, if you'd like to send me classified secrets
