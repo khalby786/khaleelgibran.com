@@ -3,12 +3,12 @@
     <h2 class="mt-10 font-bold">Some things I've made</h2>
 
     <ul id="projects">
-      <li v-for="project in projects" :key="project.name" class="mt-5 mb-5">
+      <li v-for="project in projects" :key="project.name" class="mt-3 mb-7">
         <h3 class="font-bold">{{ project.name }}</h3>
-        <p class="mt-1" v-html="project.description"></p>
+        <p class="mt-0" v-html="project.description"></p>
         <a
           :href="project.link"
-          class="text-gray-200 mt-1 italic"
+          class="text-gray-200 mt-0 italic"
           target="_blank"
           >{{ project.link.replace(/^https?\:\/\//i, "") }}</a
         >
@@ -29,8 +29,9 @@
     </ul>
 
     <p class="mt-5">
-      For more, see my <a href="https://github.com/khalby786">GitHub</a> and <a href="https://glitch.com/@khalby786">Glitch</a>.
-    </p>  
+      For more, see my <a href="https://github.com/khalby786">GitHub</a> and
+      <a href="https://glitch.com/@khalby786">Glitch</a>.
+    </p>
   </div>
 </template>
 
@@ -39,6 +40,12 @@ export default {
   data() {
     return {
       projects: [
+        {
+          name: "Chroma Key",
+          description:
+            "Plugin for Figma design to replace colors in images or make it transparent!",
+          link: "https://chromakey.khaleelgibran.com",
+        },
         {
           name: "Jsoning",
           description:
@@ -59,20 +66,19 @@ export default {
         },
         {
           name: "(not the actual) xkcd API",
-          description: "CORS proxy for the xkcd API because the actual xkcd API doesn't allow cross-origin requests. Read more about how I made this <a href='https://blog.khaleelgibran.com/posts/go-serverless-vercel/'>here</a>.",
+          description:
+            "CORS proxy for the xkcd API because the actual xkcd API doesn't allow cross-origin requests. Read more about how I made this <a href='https://blog.khaleelgibran.com/posts/go-serverless-vercel/'>here</a>.",
           link: "https://getxkcd.vercel.app",
         },
         {
           name: "SlackCMS",
           description: "Use Slack to run your next blog or website.",
           link: "https://github.com/khalby786/slack-cms",
-        }
+        },
       ],
     };
   },
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
