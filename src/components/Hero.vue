@@ -29,8 +29,8 @@
         href="https://x.com/apokhalyptic"
         rel="me"
         target="_blank"
-        >Twitter</a
-      ></li>
+        ><s>Twitter</s></a
+      > <s>suspended</s> <s>new account</s> suspended again</li>
     <li>
       <a class="" href="https://keybase.io/khalby786" target="_blank">Keybase</a
       >, if you'd like to send me classified secrets
