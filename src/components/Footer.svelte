@@ -11,6 +11,8 @@
 
 <p class="text-slate-400 text-sm">Last updated on {currentDateAndTimeHumanReadable}.</p>
 
+<p class="text-slate-400 text-sm mt-2">&copy; 2018 - {new Date().getFullYear()} Khaleel Gibran. All rights reserved.</p>
+
 <footer class="mt-5 border border-b-0 border-l-0 border-r-0 border-slate-600">
   <p class="text-sm text-slate-300 pt-2">
     Please do not write beyond this line.
